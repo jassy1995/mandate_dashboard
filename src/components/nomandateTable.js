@@ -30,10 +30,8 @@ function NomandateTable() {
     <>
        <FormModal request={request} setClose={closeModal} open={open} setOpen={setOpen} /> 
       {loading ? (
-        // <DisplayInfo children="Loading..." />
-        <span>fjfk</span>
+        <span>loading...</span>
       ) : requests.length === 0 && !loading ? (
-        // <DisplayInfo children="No Data found " />
         <span>No Data found </span>
       ) : (
         <div className="flex flex-col">

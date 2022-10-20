@@ -1,13 +1,10 @@
 import React from "react";
-// import useGlobalStore from "store/global";
-import { useScrollPosition } from "Hooks/useScrollPosition";
 // import { toast } from "react-toastify";
 import { Link, useLocation } from "react-router-dom";
 
 
 const Header = () => {
-
-  const scrollPosition = useScrollPosition();
+ 
   const location = useLocation();
   
  

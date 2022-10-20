@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import axios from "axios";
 import MainModal from './mainModal';
 // import { toast } from "react-toastify";
 
@@ -21,29 +20,6 @@ export default function IntervalModal({ open, setOpen, setClose, request }) {
     const createMandate = async () => {
        const payload = {channel,startDate,endDate,firstPaymentDate,amount,password}
         console.log(payload)
-       
-       
-        // try {
-        //     const { data } = await axios.post("https://ccendpoints.herokuapp.com/api/v2/create-interval",
-        //         { interval: intervalValue, phone });
-        //     if (data.status) {
-        //         setLoading(false);
-        //         toast.success(data.message);
-        //         setTimeout(() => {
-        //             setIntervalValue("");
-        //             setClose();
-        //         }, 6000)
-        //     } else {
-        //         toast.error("unable to create interval")
-        //     }
-        // } catch (error) {
-        //     let msg = error?.message
-        //         ? error.message
-        //         : "no or poor internet connection, try it again";
-        //     toast.error(msg);
-        //     console.log(error);
-        // }
-
     }
 
     return (

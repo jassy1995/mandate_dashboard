@@ -1,21 +1,12 @@
-import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
-// import { Store } from "../store";
-// import { timeFormatter } from "../util/timeFormatter";
+import React, { useState } from "react";
 
-// import DisplayInfo from "./empty";
-// import IntervalModal from "components/intervalModal";
+
 
 
 function PendingTable({ isLoading }) {
-  // const {
-  //   state: { locations },
-  // } = useContext(Store);
-  
-  const [open, setOpen] = useState(false);
-  const [loading, setIsLoading] = useState(false);
-  const [intervalPhone, setPhone] = useState(null);
-  const [locations, setLocation] = useState([
+ 
+  const [loading] = useState(false);
+  const [locations] = useState([
   {id:1, name:'Adeniran James', amount:'200000',s_date:"02-10-2020",e_date:"10-10-2020",link:'https://clan.com'},
   {id:2, name:'Adeniran James', amount:'200000',s_date:"02-10-2020",e_date:"10-10-2020",link:'https://clan.com'},
   {id:3, name:'Adeniran James', amount:'200000',s_date:"02-10-2020",e_date:"10-10-2020",link:'https://clan.com'},
@@ -30,10 +21,8 @@ function PendingTable({ isLoading }) {
   return (
     <>
       {loading ? (
-        // <DisplayInfo children="Loading..." />
-        <span>ffjfk</span>
+        <span>loading</span>
       ) : locations.length === 0 && !isLoading ? (
-        // <DisplayInfo children="No Data found " />
         <span>No Data found </span>
       ) : (
         <div className="flex flex-col">

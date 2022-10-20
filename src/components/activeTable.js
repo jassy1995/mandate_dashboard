@@ -19,10 +19,8 @@ function ActiveTable() {
   return (
     <>
       {loading ? (
-        // <DisplayInfo children="Loading..." />
-        <span>ffjfk</span>
+        <span>loading...</span>
       ) : requests.length === 0 && !loading ? (
-        // <DisplayInfo children="No Data found " />
         <span>No Data found </span>
       ) : (
         <div className="flex flex-col">
